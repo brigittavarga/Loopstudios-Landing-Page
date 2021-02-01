@@ -108,6 +108,7 @@ header h1 {
 
 .logo img {
     width: 150px;
+    cursor: pointer;
 }
 
 section.interactive-vr {
