@@ -64,7 +64,7 @@ header h1 {
     padding: 30px 10px 30px 30px;
     width: 500px;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 80px;
     font-size: 3.3rem;
     font-weight: 300;
@@ -87,12 +87,30 @@ header h1 {
     cursor: pointer;
 }
 
+.nav-container ul li::after,
+.nav-footer ul li::after,
+.social-links img::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+    margin: 5px auto;
+}
+
+.nav-container ul li:hover::after,
+.nav-footer ul li:hover::after,
+.social-links img:hover::after {
+    width: 50%;
+    transition: width .3s;
+}
+
 .logo img {
     width: 150px;
 }
 
 section.interactive-vr {
-    /* padding: 120px 0 120px 0; */
     padding-top: 120px;
     display: flex;
     justify-content: center;
@@ -130,6 +148,12 @@ button {
     border: 1px solid black;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all .5s;
+}
+
+button:hover {
+    background-color:hsl(0, 0%, 0%);
+    color:hsl(0, 0%, 100%);
 }
 
 .creations-images {
@@ -138,12 +162,26 @@ button {
     grid-gap: 20px;
 }
 
+.img-container {
+    position: relative;
+}
+
+.creations-images .img-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    width: 75%;
+    font-weight: 100;
+    font-size: 2.3rem;
+}
+
 footer {
     background-color: hsl(0, 0%, 0%);
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 40px 80px;
 }
 
 footer .nav-footer ul li {
