@@ -249,6 +249,10 @@ footer .nav-footer ul li,
         text-align: center;
         padding-bottom: 20px;
     }
+
+    section.interactive-vr .textbox {
+        width: 100vw;
+    }
 }
 
 @media only screen and (max-width: 897px) {
@@ -268,7 +272,6 @@ footer .nav-footer ul li,
         bottom: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: hsl(0, 0%, 0%);
         padding: 10px;
     }
 
@@ -344,11 +347,11 @@ footer .nav-footer ul li,
         padding-top: 0;
     }
 
-    section.interactive-vr .textbox {
-        width: 100vw;
-    }
-
     section.interactive-vr .textbox h2 {
         font-size: 1.4rem;
+    }
+
+    section.our-creations {
+        padding: 0;
     }
 }
