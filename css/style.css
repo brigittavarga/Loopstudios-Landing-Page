@@ -316,3 +316,39 @@ footer .nav-footer ul li,
         padding-left: 10px;
     }
 }
+
+@media only screen and (max-width: 392px) {
+    .heading-container h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    button {
+        padding: 10px;
+    }
+
+    footer .nav-footer ul {
+        flex-direction: column;
+    }
+    
+    footer .nav-footer ul li {
+        padding-right: 0;
+    }
+
+    .col-right {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .interactive-vr {
+        padding-top: 0;
+    }
+
+    section.interactive-vr .textbox {
+        width: 100vw;
+    }
+
+    section.interactive-vr .textbox h2 {
+        font-size: 1.4rem;
+    }
+}
